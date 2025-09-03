@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sristar Gold Company</title>
+  <link rel="stylesheet" href="blog2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Additional responsive navbar fixes for mobile */
+    @media (max-width: 991.98px) {
+      .navbar-toggler {
+        padding: 4px 8px !important;
+        font-size: 1.25rem !important;
+        line-height: 1 !important;
+        background-color: transparent !important;
+        border: 1px solid rgba(105, 10, 50, 0.5) !important;
+        border-radius: 0.375rem !important;
+      }
+      
+      .navbar-toggler:focus {
+        text-decoration: none !important;
+        outline: 0 !important;
+        box-shadow: 0 0 0 0.25rem rgba(105, 10, 50, 0.25) !important;
+      }
+      
+      .navbar-collapse {
+        margin-top: 0.5rem !important;
+      }
+    }
+
+    /* Floating Action Buttons */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .call-btn {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .floating-buttons {
+        right: 15px;
+        bottom: 15px;
+      }
+      
+      .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+ <!-- Header Section -->
+  <div class="container-fluid top-header">
+    <div class="row align-items-center px-3">
+      <div class="col-md-6 col-12 address">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>Sristar Gold Company,280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</span>
+      </div>
+      
+           <div class="col-md-6 col-12 company-brand d-flex align-items-center justify-content-md-end justify-content-start gap-3">
+  <!-- Facebook Icon -->
+  <a href="https://www.facebook.com/sristargold" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Facebook">
+    <i class="bi bi-facebook me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Instagram Icon -->
+  <a href="https://www.instagram.com/sristargold/" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Instagram">
+    <i class="bi bi-instagram me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Twitter Icon -->
+  <a href="https://x.com/i/flow/login?redirect_after_login=%2FSriStarGold" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Twitter">
+    <i class="bi bi-twitter me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Company Name -->
+  <span class="fw-bold" style="color: #0b0c0c;"></span>
+</div>
+
+
+        <!-- <span class="company-name">Sristar Gold Company</span> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom bg-light">
+  <div class="container">
+    <!-- Logo & Brand -->
+      <!-- Logo & Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/2695556-middle-removebg-preview.png" alt="Logo" />
+        Sristar Gold Company
+      </a>
+
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="font-weight:bold;font-size:18px">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus .html" style="font-weight:bold;font-size:18px">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html" style="font-weight:bold;font-size:18px">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="branches.html" style="font-weight:bold;font-size:18px">Branches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="font-weight:bold;font-size:18px">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Awards.html" style="font-weight:bold;font-size:18px">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="career.html" style="font-weight:bold;font-size:18px">Career</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="blogs.html" style="font-weight:bold;font-size:18px">Blogs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+    
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Main content -->
+      <main class="col-lg-8">
+        <!-- Your main article content unchanged -->
+        <span class="badge bg-danger text-uppercase">Education</span>
+        <h1 class="mt-2 gold-title">
+          GOLD INVESTMENT <span class="text-dark">101</span>
+        </h1>
+        <p class="fst-italic">
+          Discover the <strong>Best Ways to Invest</strong> in Gold
+        </p>
+        <p>by Meyisanen Longkumer</p>
+
+        <p style="font-size: 20px;">
+          Investing in gold is a popular choice for those looking to diversify
+          their portfolios and hedge against economic uncertainties. As we know,
+          gold has been valued for its rarity and beauty for thousands of years
+          and continues to be a reliable store of value.
+        </p>
+        <p style="font-size: 20px;">
+          Here, we speak with <strong>Srikanth V</strong>, an expert in the
+          precious metals market and the Founder and Director of Sristar Gold
+          and Sristar Sona Chandi Limited, to explore various gold investment
+          options, including physical gold, ETFs, gold mining stocks, and more.
+        </p>
+
+         <!-- Author Image: Replace src with your image URL -->
+        
+   <img 
+  src="images/gold investment.jpg" 
+  alt="Description of the image" 
+  class="img-fluid my-3" 
+  style="max-height: 350px; object-fit: contain; width: 100%;"
+/>
+
+
+        <!-- Section 1 -->
+        <h2 class="section-title"><span class="section-number">1.</span> Physical Gold</h2>
+        <p><strong>Forms of Physical Gold:</strong></p>
+        <div class="info-box">
+          <h5 class="highlight">Gold Bullion</h5>
+          <p style="font-size: 20px;">Available in bars and coins, gold bullion is a tangible asset that investors can hold. The value is determined by the gold content and current market prices.</p>
+          <!-- Image for Gold Bullion -->
+          <img src="path-to-gold-bullion-image.jpg" alt="Gold Bullion" class="content-img" />
+        </div>
+        <div class="info-box">
+          <h5 class="highlight">Jewelry</h5>
+          <p style="font-size: 20px;">While commonly bought for adornment, gold jewelry can also be considered an investment. However, it often carries higher premiums due to craftsmanship and design.</p>
+          <!-- Image for Gold Jewelry -->
+          <img src="path-to-gold-jewelry-image.jpg" alt="Gold Jewelry" class="content-img" />
+        </div>
+        <div class="info-box">
+          <h5 class="highlight">Gold Coins</h5>
+          <p style="font-size: 20px;">Coins such as the American Gold Eagle, Canadian Gold Maple Leaf, and South African Krugerrand are popular among investors for their purity and recognized value.</p>
+          <!-- Image for Gold Coins -->
+          <img src="path-to-gold-coins-image.jpg" alt="Gold Coins" class="content-img" />
+        </div>
+
+        <div class="advantage">
+          <h6 style="font-size: 20px;"><strong>Advantages 👍</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Tangible Asset:</strong> Physical gold is a real, tangible asset that can be securely stored.</li>
+            <li><strong>No Counterparty Risk and Inflation Hedge:</strong> Physical gold does not rely on a third party and retains value over time.</li>
+          </ul>
+        </div>
+        <div class="disadvantage"style="font-size: 20px;">
+          <h6 style="font-size: 20px;"><strong>Disadvantages 👎</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Storage and Insurance:</strong> Requires safekeeping and insurance, adding to the cost.</li>
+            <li><strong>Liquidity Issues:</strong> Selling physical gold can be less straightforward and may involve transaction fees.</li>
+          </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <h2 class="section-title"><span class="section-number">2.</span> Gold Exchange-Traded Funds (ETFs)</h2>
+        <div class="info-box">
+          <h5 class="highlight">What are Gold ETFs?</h5>
+          <p style="font-size: 20px;">Gold ETFs are investment funds traded on stock exchanges, much like stocks. They track the price of gold and are backed by physical gold holdings.</p>
+          <!-- Image for Gold ETFs -->
+          <img src="" alt="Gold ETFs" class="content-img" />
+        </div>
+        <div class="info-box">
+          <h5 class="highlight">Popular Gold ETFs:</h5>
+          <ul style="font-size: 20px;">
+            <li>SPDR Gold Shares</li>
+            <li>iShares Gold Trust (IAU)</li>
+            <li>Aberdeen Standard Physical</li>
+            <li>Gold Shares ETF</li>
+          </ul>
+        </div>
+
+        <div class="advantage">
+          <h6 style="font-size: 20px;"><strong>Advantages 👍</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>High Liquidity & No Storage Issues:</strong> Can be traded easily like stocks.</li>
+            <li><strong>Cost-Effective:</strong> Lower transaction costs than buying physical gold.</li>
+          </ul>
+        </div>
+        <div class="disadvantage">
+          <h6 style="font-size: 20px;"><strong>Disadvantages 👎</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Management Fees:</strong> ETFs charge annual management fees.</li>
+            <li><strong>Counterparty Risk:</strong> Risk with the financial institutions managing the ETFs.</li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <h2 class="section-title"><span class="section-number">3.</span> Gold Mining Stocks</h2>
+        <div class="info-box">
+          <h5 class="highlight">What are Gold Mining Stocks?</h5>
+          <p style="font-size: 20px;">These are shares of companies engaged in the extraction and production of gold. Investing in these stocks provides exposure to gold prices and the operational performance of the companies.</p>
+          <!-- Image for Gold Mining Stocks -->
+          <img src="path-to-gold-mining-stocks-image.jpg" alt="Gold Mining Stocks" class="content-img" />
+        </div>
+        <div class="info-box">
+          <h5 class="highlight">Popular Gold Mining Companies:</h5>
+          <ul style="font-size: 20px;">
+            <li>Barrick Gold Corporation</li>
+            <li>Newmont Corporation</li>
+            <li>AngloGold Ashanti</li>
+          </ul>
+        </div>
+
+        <div class="advantage">
+          <h6 style="font-size: 20px;"><strong>Advantages 👍</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Potential for High Returns:</strong> Gold mining stocks can offer significant returns if the company performs well and gold prices rise.</li>
+            <li><strong>Dividends:</strong> Some gold mining companies pay dividends to their shareholders.</li>
+          </ul>
+        </div>
+        <div class="disadvantage">
+          <h6 style="font-size: 20px;"><strong>Disadvantages 👎</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Operational Risks:</strong> Company-specific risks such as management decisions, mining operations, and geopolitical factors can impact stock performance.</li>
+            <li><strong>Volatility:</strong> Gold mining stocks can be more volatile than physical gold or gold ETFs.</li>
+          </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <h2 class="section-title"><span class="section-number">4.</span> Gold Mutual Funds</h2>
+        <div class="info-box">
+          <h5 class="highlight">What are Gold Mutual Funds?</h5>
+          <p style="font-size: 20px;">These funds invest in a diversified portfolio of gold-related assets, including physical gold, gold mining stocks, and gold ETFs.</p>
+          <!-- Optional Image -->
+          <img src="path-to-gold-mutual-funds-image.jpg" alt="Gold Mutual Funds" class="content-img" />
+        </div>
+
+        <div class="advantage">
+          <h6 style="font-size: 20px;"><strong>Advantages 👍</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Potential for High Returns:</strong> Gold mutual funds can offer significant returns if the company performs well and gold prices rise.</li>
+            <li><strong>Dividends:</strong> Some gold mutual funds include companies that pay dividends to shareholders.</li>
+          </ul>
+        </div>
+        <div class="disadvantage">
+          <h6 style="font-size: 20px;"><strong>Disadvantages 👎</strong></h6>
+          <ul style="font-size: 20px;">
+            <li><strong>Management Fees:</strong> These funds charge management fees, which can reduce overall returns.</li>
+            <li><strong>Less Control:</strong> Investors have less control over individual asset selection compared to direct investments.</li>
+          </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <h2 class="section-title"><span class="section-number">5.</span> Gold Futures and Options</h2>
+        <div class="info-box">
+          <h5 class="highlight">What are Gold Futures and Options?</h5>
+          <p style="font-size: 20px;"><strong>Gold Futures:</strong> Contracts to buy or sell a specific amount of gold at a predetermined price on a set date in the future.</p>
+          <p style="font-size: 20px;"><strong>Gold Options:</strong> Contracts that give the holder the right, but not the obligation, to buy or sell gold at a specific price before a certain date.</p>
+          <!-- Optional Image -->
+          <img src="path-to-gold-futures-options-image.jpg" alt="Gold Futures and Options" class="content-img" />
+        </div>
+
+        <div class="advantage">
+          <h6><strong>Advantages 👍</strong></h6>
+          <ul>
+            <li style="font-size: 20px;"><strong>Leverage:</strong> Allows investors to control large amounts of gold with a relatively small investment.</li>
+            <li style="font-size: 20px;"><strong>Potential for High Returns:</strong> The leverage can lead to significant profits if gold prices move favorably.</li>
+          </ul>
+        </div>
+        <div class="disadvantage">
+          <h6><strong>Disadvantages 👎</strong></h6>
+          <ul>
+            <li style="font-size: 20px;"><strong>High Risk:</strong> The leverage also means higher risk, and investors can lose more than their initial investment.</li>
+            <li style="font-size: 20px;"><strong>Complexity:</strong> Futures and options are complex financial instruments requiring understanding and experience.</li>
+          </ul>
+        </div>
+
+        <!-- Section 6 -->
+        <h2 class="section-title"><span class="section-number">6.</span> Digital Gold</h2>
+        <div class="info-box">
+          <h5 class="highlight">What is Digital Gold?</h5>
+          <p style="font-size: 20px;">Digital gold platforms allow investors to buy and hold gold in a digital form. The gold is stored in secure vaults, and investors can buy or sell it online.</p>
+          <!-- Optional Image -->
+          <img src="path-to-digital-gold-image.jpg" alt="Digital Gold" class="content-img" />
+        </div>
+        <div class="info-box">
+          <h5 class="highlight">Popular Digital Gold Platforms:</h5>
+          <ul style="font-size: 20px;">
+            <li>Paytm Gold</li>
+            <li>Google Pay Gold</li>
+            <li>PhonePe Gold</li>
+          </ul>
+        </div>
+
+        <div class="advantage">
+          <h6 style="font-size: 20px;"><strong>Advantages 👍</strong></h6>
+          <ul>
+            <li style="font-size: 20px;"><strong>Convenience:</strong> Easy to buy, sell, and hold gold digitally.</li>
+            <li style="font-size: 20px;"><strong>Low Transaction Costs:</strong> Lower costs compared to physical gold transactions.</li>
+          </ul>
+        </div>
+        <div class="disadvantage">
+          <h6 style="font-size: 20px;"><strong>Disadvantages 👎</strong></h6>
+          <ul>
+            <li style="font-size: 20px;"><strong>Storage Fees:</strong> Some platforms may charge storage fees.</li>
+            <li style="font-size: 20px;"><strong>Regulatory Risks:</strong> Digital gold platforms may be subject to regulatory changes that impact their operations.</li>
+          </ul>
+        </div>
+
+        <div class="conclusion">
+          <p style="font-size: 20px;">
+            Gold investment options provide various ways to gain exposure to the precious metal, each with its own advantages and risks. Physical gold offers tangibility and no counterparty risk, while gold ETFs and digital gold offer convenience and liquidity. Gold mining stocks and mutual funds provide opportunities for higher returns through exposure to gold-related companies. Finally, gold futures and options cater to experienced investors seeking leverage. Diversifying across these options can help balance the benefits and risks associated with gold investments.
+          </p>
+        </div>
+       
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="col-lg-4 d-flex flex-column gap-3">
+        <!-- QUICK GOLD INVESTMENT TIPS - STAYS ON TOP -->
+        <section class="sidebar sidebar-tips">
+          <h5 class="text-dark">Quick Gold Investment Tips</h5>
+          <ul>
+            <li>Diversify with physical and digital gold</li>
+            <li>Check purity and certification</li>
+            <li>Track market prices before buying</li>
+            <li>Use secure storage options</li>
+            <li>Consider long-term investment potential</li>
+          </ul>
+          <hr />
+          <h6>About the Expert</h6>
+          <p>
+            <strong>Srikanth V</strong> is a trusted name in the Indian gold market,
+            known for his work with Sristar Gold and Sona Chandi Limited.
+          </p>
+          <img
+            src="images/srikant sir 1.jpg"
+            alt="Srikanth V Expert"
+          class="img-fluid"
+          />
+        </section>
+
+        <!-- REST OF SIDEBAR BELOW -->
+          <!-- Sidebar -->
+      <div class="col-lg-4" style="width: 400px;">
+        
+        <!-- Gold Price Widget -->
+        <div class="sidebar">
+          <div class="gold-price-widget">
+            <h4 class="gold-price-title">Today's Gold Price</h4>
+            <div class="gold-price">₹6,245</div>
+            <div class="price-change">+₹125 (+2.04%) ↗</div>
+            <small>Per gram (24K)</small>
+          </div>
+        </div>
+       
+        <section class="sidebar sb">
+          <h3>Recent Posts</h3>
+          <ul class="rp-list">
+            <li class="rp-item">
+              <span class="pill">Tips</span>
+              <div>
+                <div class="rp-title">How to Identify Fake Gold: Expert Tips</div>
+                <div class="date">Nov 28, 2024</div>
+              </div>
+            </li>
+            <li class="rp-item">
+              <span class="pill">News</span>
+              <div>
+                <div class="rp-title">RBI Guidelines on Gold Loans: What Changed</div>
+                <div class="date">Nov 25, 2024</div>
+              </div>
+            </li>
+            <li class="rp-item">
+              <span class="pill">Guide</span>
+              <div>
+                <div class="rp-title">Tax Implications of Gold Investment in India</div>
+                <div class="date">Nov 22, 2024</div>
+              </div>
+            </li>
+            <li class="rp-item">
+              <span class="pill">Market</span>
+              <div>
+                <div class="rp-title">Global Factors Affecting Gold Prices</div>
+                <div class="date">Nov 20, 2024</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sidebar sb sb-news">
+          <div class="pane">
+            <h4>Stay Updated</h4>
+            <p>Get price alerts, guides & tips in your inbox.</p>
+            <input class="field" type="email" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+
+
+  <!-- Header -->
+<div class="gold-header">
+  <img src="Images/2695556-middle-removebg-preview.png" alt="Company Logo" class="company-logo">
+  <div class="company-name">Sristar Gold Company</div>
+</div>
+
+<!--Footer-->
+
+
+<!-- ======= Business Footer Start ======= -->
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <h5 class="text-uppercase text-warning mb-3"><b>SRISTAR GOLD COMPANY</b></h5>
+        <p class="footer-description">
+       Transform your gold into immediate rewards, hassle-free and secure.
+At SriStar Gold, we value your trust as much as your gold
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Quick links</h6>
+        <ul class="list-unstyled">
+           <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="aboutus .html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="branches.html" class="footer-link">Branches</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us </a></li>
+          <li><a href="Awards.html" class="footer-link">Awards</a></li>
+                <li><a href="career.html" class="footer-link">Career</a></li>
+                 <li><a href="blogs.html" class="footer-link">Blogs</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-3 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Contact</h6>
+        <p class="contact-info"><i class="fas fa-map-marker-alt me-2"></i>280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</p>
+        <p class="contact-info"><i class="fas fa-envelope me-2"></i> sristargold@gmail.com</p>
+        <p class="contact-info"><i class="fas fa-phone me-2"></i>6366333444</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Newsletter</h6>
+        <p>Subscribe to receive business insights and news.</p>
+        <form action="#" method="POST" class="mt-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <input type="email" class="form-control" placeholder="Your email" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning w-100">
+                <i class="fas fa-paper-plane me-2"></i>Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Social Icons -->
+        <div class="social-icons mt-4">
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2FSriStarGold" target="_blank" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/sristargold" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sristargold/" target="_blank" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6366333444" target="_blank" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary" />
+    <div class="text-center small text-muted">
+      &copy; 2025 sristar gold Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+<!-- ======= Business Footer End ======= -->
+
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/6366333444" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916366333444" class="floating-btn call-btn" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
